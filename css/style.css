@@ -43,6 +43,12 @@ section {
     padding: 30px 10%;
 }
 
+hr {
+    border: solid 2px #f6f8f9;
+    margin: 10px -20%;
+    padding: 0;
+}
+
 /* button settings */
 button {
     border-style: solid;
@@ -77,7 +83,7 @@ button {
     padding: 2px;
 }
 
-/* task settins */
+/* task settings */
 .task {
     font-size: 17px;
     margin: 10px 5px;
