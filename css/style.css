@@ -3,6 +3,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 body {
     background-color: #f6f8f9;
@@ -11,6 +13,10 @@ body {
 header {
     background-color: white;
     padding: 20px 30px;
+}
+
+section {
+    margin: 50px 0;
 }
 
 /* title and logo */
@@ -38,7 +44,8 @@ header {
 }
 
 /* button settings */
-.button {
+button {
+    border-style: solid;
     border-radius: 5px;
     padding: 5px;
 }
@@ -52,6 +59,7 @@ header {
 .addsect{
     color: #d0d4d8;
     border-color: #d0d4d8;
+    background-color: white;
 }
 
 /* check and uncheck settings */
@@ -59,7 +67,7 @@ header {
     color: #6cc4ae;
     border: 2px solid #6cc4ae;
     border-radius: 50%;
-    padding: 2px 4px;
+    padding: 1px 2px;
 }
 
 .uncheck {
@@ -69,12 +77,20 @@ header {
     padding: 2px;
 }
 
+/* task settins */
+.task {
+    font-size: 17px;
+    margin: 10px 5px;
+}
+
+
+
 /* tag settings */
 .tag {
     border-radius: 10px;
     color: white;
-    font-size: 12px;
-    padding: 8px;
+    font-size: 10px;
+    padding: 4px;
 }
 
 .blue {
