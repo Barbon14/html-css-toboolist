@@ -33,4 +33,49 @@ header {
     margin: 50px auto;
     background-color: white;
     border-radius: 10px;
+    padding: 30px 10%;
+}
+
+/* button settings */
+.button {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.addtask {
+    color: white;
+    background-color: #47adf1;
+    border-color: #47adf1;
+}
+
+.addsect{
+    color: #d0d4d8;
+    border-color: #d0d4d8;
+}
+
+/* check and uncheck settings */
+.check {
+    color: #6cc4ae;
+    border: 2px solid #6cc4ae;
+    border-radius: 50%;
+    padding: 2px 4px;
+}
+
+.uncheck {
+    color: #ec1212;
+    border: 2px solid #ec1212;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+/* tag settins */
+.tag {
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.editorial {
+    background-color: #45abe9;
 }
