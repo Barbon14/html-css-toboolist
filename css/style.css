@@ -36,24 +36,20 @@ header {
 /* main content */
 .container {
     width: 80%;
-    height: 80%;
     margin: 50px auto;
     background-color: white;
     border-radius: 10px;
-    padding: 30px 10%;
 }
 
-hr {
-    border: solid 2px #f6f8f9;
-    margin: 10px -20%;
-    padding: 0;
-}
-
-li {
-    list-style: none;
-}
 
 /* button settings */
+nav {
+    height: 50px;
+    padding: 0 50px;
+    border-bottom: 2px solid #f6f8f9;
+    line-height: 50px;
+}
+
 button {
     border-style: solid;
     border-radius: 5px;
@@ -73,58 +69,73 @@ button {
 }
 
 /* check and uncheck settings */
-.check::after {
+.circle::before {
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.circle.check::before {
     content: "\2713";
     color: #6cc4ae;
-    border: 2px solid #6cc4ae;
-    border-radius: 50%;
     padding: 1px 2px;
 }
 
-.uncheck::after {
+.circle.uncheck::before {
     content: "\2717";
     color: #ec1212;
-    border: 2px solid #ec1212;
-    border-radius: 50%;
     padding: 2px;
 }
 
 /* task settings */
-.task {
-    font-size: 17px;
-    margin: 10px 5px;
+.tasks {
+    padding: 0 50px;
+    margin-top: 30px;
 }
 
+.tasks h2::before {
+    content: '\25BE';
+}
 
+li {
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+}
 
 /* tag settings */
-.tag {
-    border-radius: 10px;
+.tag::after {
+    border-radius: 8px;
     color: white;
-    font-size: 10px;
-    padding: 4px;
+    font-size: 12px;
+    padding: 5px;
 }
 
-.blue {
+.tag.type1::after {
+    content: "Editorial";
     background-color: #45abe9;
 }
 
-.violet {
+.tag.type2::after {
+    content: "Q1 Goals";
     background-color: #9c72e4;
 }
 
-.green {
+.tag.type3::after {
+    content: "Recruting";
     background-color: #65c0a9;
 }
 
-.orange {
+.tag.type4::after {
+    content: "Mobile";
     background-color: #f29e33;
 }
 
-.pink {
+.tag.type5::after {
+    content: "Website";
     background-color: #d863a1;
 }
 
-.lime {
+.tag.type6::after {
+    content: "Sales";
     background-color: #b0c928;
 }
