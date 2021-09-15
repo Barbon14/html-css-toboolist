@@ -6,6 +6,7 @@
     font-family: sans-serif;
     font-weight: bold;
 }
+
 body {
     background-color: #f6f8f9;
 }
@@ -41,7 +42,6 @@ header {
     border-radius: 10px;
 }
 
-
 /* button settings */
 nav {
     height: 50px;
@@ -70,20 +70,25 @@ button {
 
 /* check and uncheck settings */
 .circle::before {
-    border: 2px solid;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
     border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 10px;
 }
 
 .circle.check::before {
     content: "\2713";
     color: #6cc4ae;
-    padding: 1px 2px;
+    border: 2px solid;
 }
 
 .circle.uncheck::before {
     content: "\2717";
     color: #ec1212;
-    padding: 2px;
+    border: 2px solid;
 }
 
 /* task settings */
