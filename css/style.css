@@ -49,6 +49,10 @@ hr {
     padding: 0;
 }
 
+li {
+    list-style: none;
+}
+
 /* button settings */
 button {
     border-style: solid;
@@ -69,14 +73,16 @@ button {
 }
 
 /* check and uncheck settings */
-.check {
+.check::after {
+    content: "\2713";
     color: #6cc4ae;
     border: 2px solid #6cc4ae;
     border-radius: 50%;
     padding: 1px 2px;
 }
 
-.uncheck {
+.uncheck::after {
+    content: "\2717";
     color: #ec1212;
     border: 2px solid #ec1212;
     border-radius: 50%;
